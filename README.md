@@ -2,6 +2,10 @@
 
 > Allow to set, get and erase cookie easily with Javascript
 
+```js
+import { getCookie, setCookie, eraseCookie } from "@jimmymos/dom-cookies-helper"
+```
+
 ## Get cookie
 ```js
 getCookie('cookieName');
