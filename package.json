@@ -1,0 +1,20 @@
+{
+  "name": "@jimmymos/dom-cookies-helper",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hashiramaa/npm-dom-cookies-helper.git"
+  },
+  "author": "jimmymos",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hashiramaa/npm-dom-cookies-helper/issues"
+  },
+  "homepage": "https://github.com/Hashiramaa/npm-dom-cookies-helper#readme"
+}
