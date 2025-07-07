@@ -1,22 +1,15 @@
 /**
  * Set a cookie in the user browser.
  *
- * @param {string} name       - Cookie name.
- * @param {string} value      - Cookie value.
- * @param {Object} expireData - Data about token expiration (by default no expire date is set).
- * @param {string} expireData.expireMode - Time measure type ("hour" or "day").
- * @param {number} expireData.expire     - Number of days or hours before cookie expire.
+ * @param {string} name     - Cookie name.
+ * @param {string} value    - Cookie value.
+ * @param {number} expireIn - Cookie expiration in ms (by default no expire date is set).
  * @returns {void}
  */
-export function setCookie(name,value, expireData = {
-    "expireMode": "none",
-    "expire"    : 1
-}) {
+export function setCookie(name, value, expireIn) {
     var expires = "";
-    if (['day','hour'].includes(expireData.expireMode)) {
-        var timeToAdd = 0;
-        if(expireData.expireMode === 'day') {timeToAdd = (expireData.expire*24*60*60*1000)}
-        if(expireData.expireMode === 'hour') {timeToAdd = (expireData.expire*60*60*1000)}
+    if (typeof expireIn === 'number') {
+        var timeToAdd = expireIn;
         var date = new Date();
         date.setTime(date.getTime() + (timeToAdd));
         expires = "; expires=" + date.toUTCString();

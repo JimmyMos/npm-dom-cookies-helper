@@ -14,11 +14,7 @@ getCookie('cookieName');
 ## Set cookie
 ```js
 setCookie('cookieName', 'cookieValue');
-// Expiration can be set by adding a 3rd parameter:
-// {
-//    "expireMode": "day || hour",
-//    "expire"    : int
-// }
+// Expiration can be set by adding a 3rd parameter as the number of milliseconds
 ```
 
 ## Erase cookie
