@@ -22,7 +22,7 @@ export function setCookie(data) {
  * Get a cookie value.
  *
  * @param {string} name - Cookie name.
- * @returns {string} Cookie value.
+ * @returns {string | undefined} Cookie value.
  */
 export function getCookie(name) {
     var nameEQ = name + "=";
@@ -32,7 +32,7 @@ export function getCookie(name) {
         while (c.charAt(0)==' ') c = c.substring(1,c.length);
         if (c.indexOf(nameEQ) == 0) return c.substring(nameEQ.length,c.length);
     }
-    return null;
+    return undefined;
 }
 
 /**
