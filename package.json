@@ -9,12 +9,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Hashiramaa/npm-dom-cookies-helper.git"
+    "url": "git+https://github.com/JimmyMos/npm-dom-cookies-helper.git"
   },
   "author": "jimmymos",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/Hashiramaa/npm-dom-cookies-helper/issues"
+    "url": "https://github.com/JimmyMos/npm-dom-cookies-helper/issues"
   },
-  "homepage": "https://github.com/Hashiramaa/npm-dom-cookies-helper#readme"
+  "homepage": "https://github.com/JimmyMos/npm-dom-cookies-helper#readme"
 }
