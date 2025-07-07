@@ -1,6 +1,6 @@
 {
   "name": "@jimmymos/dom-cookies-helper",
-  "version": "1.0.15",
+  "version": "1.1.0",
   "description": "DOM cookies helper",
   "main": "index.js",
   "type": "module",

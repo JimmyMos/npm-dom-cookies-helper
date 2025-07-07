@@ -2,6 +2,9 @@
 
 > A tiny utility to easily set, get, and erase cookies in the browser using JavaScript.
 
+> 🛑 Heads up! Versions below `v1.1.0` are deprecated.  
+> Please upgrade to `^1.1.0` or higher for a stable and supported release.
+
 ## 🚀 Installation
 
 ```bash
