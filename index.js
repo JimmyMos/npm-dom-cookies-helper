@@ -1,20 +1,21 @@
 /**
  * Set a cookie in the user browser.
  *
- * @param {string} name     - Cookie name.
- * @param {string} value    - Cookie value.
- * @param {number} expireIn - Cookie expiration in ms (by default no expire date is set).
+ * @param {object} data               - Cookies data.
+ * @param {string} data.name          - Cookie name.
+ * @param {string} data.value         - Cookie value.
+ * @param {number} [data.expiresInMs] - Optional expiration time in milliseconds. By default the cookie live in the session.
  * @returns {void}
  */
-export function setCookie(name, value, expireIn) {
+export function setCookie(data) {
     var expires = "";
-    if (typeof expireIn === 'number') {
-        var timeToAdd = expireIn;
+    if (typeof data.expiresInMs === 'number') {
+        var timeToAdd = expiresInMs;
         var date = new Date();
         date.setTime(date.getTime() + (timeToAdd));
         expires = "; expires=" + date.toUTCString();
     }
-    document.cookie = name + "=" + (value || "")  + expires + "; path=/";
+    document.cookie = data.name + "=" + (data.value || "")  + expires + "; path=/";
 }
 
 /**

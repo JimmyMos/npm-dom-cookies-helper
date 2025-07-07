@@ -1,23 +1,56 @@
 # @jimmymos/dom-cookies-helper
 
-> Allow to set, get and erase cookie easily with Javascript
+> A tiny utility to easily set, get, and erase cookies in the browser using JavaScript.
+
+## 🚀 Installation
+
+```bash
+npm install @jimmymos/dom-cookies-helper
+```
+
+## 📦 Usage
+
+Import the helper functions:
 
 ```js
 import { getCookie, setCookie, eraseCookie } from "@jimmymos/dom-cookies-helper"
 ```
 
-## Get cookie
+## 🍪 API
+
+### getCookie(name)
+
+Retrieves the value of a cookie by name.
+
 ```js
 getCookie('cookieName');
 ```
 
-## Set cookie
+### setCookie(data)
+
+Sets a cookie with the given name and value.
+
+- data.expiresInMs (optional): Duration in milliseconds before the cookie expires.
+- If not provided, the cookie becomes a session cookie (deleted when the browser is closed).
+
 ```js
-setCookie('cookieName', 'cookieValue');
-// Expiration can be set by adding a 3rd parameter as the number of milliseconds
+// Set a cookie that expires in 1 year
+setCookie({
+    name: 'cookieName',
+    value: 'cookieValue',
+    expiresInMs: 1000 * 60 * 60 * 24 * 365
+});
 ```
 
-## Erase cookie
+### eraseCookie(name)
+
+Deletes a cookie by name.
+
 ```js
 eraseCookie('cookieName');
 ```
+
+## 📝 Notes
+
+- This utility only works in the browser (not Node.js).
+- Cookies are stored under the current domain and path.
