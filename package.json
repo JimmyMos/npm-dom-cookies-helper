@@ -1,6 +1,6 @@
 {
   "name": "@jimmymos/dom-cookies-helper",
-  "version": "1.0.13",
+  "version": "1.0.14",
   "description": "DOM cookies helper",
   "main": "index.js",
   "type": "module",
@@ -11,6 +11,10 @@
     "type": "git",
     "url": "git+https://github.com/JimmyMos/npm-dom-cookies-helper.git"
   },
+  "keywords": [
+    "DOM",
+    "cookies"
+  ],
   "author": "jimmymos",
   "license": "ISC",
   "bugs": {
