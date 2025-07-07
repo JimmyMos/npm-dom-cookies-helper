@@ -10,7 +10,7 @@
 export function setCookie(data) {
     var expires = "";
     if (typeof data.expiresInMs === 'number') {
-        var timeToAdd = expiresInMs;
+        var timeToAdd = data.expiresInMs;
         var date = new Date();
         date.setTime(date.getTime() + (timeToAdd));
         expires = "; expires=" + date.toUTCString();
